@@ -6,30 +6,125 @@
 
 html {
   font-size: 62.5%;
+  /* scroll-behavior: smooth; */
 }
 
 body {
   color: #000;
   font-family: sans-serif;
-  height: 100%;
 }
 
 /* BORDERS */
 
 .borders {
   position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.borders div {
+  position: absolute;
+  background-color: black;
+}
+
+.top,
+.bottom {
+  left: 0;
+  right: 0;
+  height: 5rem;
 }
 
 .top {
   top: 0;
-  background-color: #fff;
-  height: 2.4rem;
-  z-index: 100;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.left,
+.right {
+  top: 0;
+  bottom: 0;
+  width: 5rem;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
 }
 
 .page {
-  height: 100%;
   background-color: aqua;
+}
+
+.section-hero {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5rem;
+}
+
+.hero-me {
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
+.hero-txt {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+}
+
+.section-about-me {
+  height: 100vh;
+  background-color: orangered;
+  transition: all 2s;
+}
+
+.scroll-trigger {
+  height: 150vh;
+  transform: translateY(-70vh);
+}
+
+/* .section-about-me:hover,
+.section-about-me:active {
+  height: 100vh;
+  transform: translateY(-50vh);
+} */
+
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 20rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  text-align: center;
+  width: 54rem;
+}
+
+.about-img {
+  height: 100px;
+  width: 100px;
 }
 
 .lorem {
