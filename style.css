@@ -61,9 +61,13 @@ body {
   right: 0;
 }
 
+/* MAIN PAGE */
+
 .page {
   background-color: aqua;
 }
+
+/* HERO SECTION */
 
 .section-hero {
   height: 50vh;
@@ -74,12 +78,8 @@ body {
 }
 
 .hero-upper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 5rem;
+  text-align: center;
+  margin-top: 10rem;
 }
 
 .hero-me {
@@ -92,15 +92,23 @@ body {
   text-transform: uppercase;
 }
 
-.section-about-me {
+/* ABOUT ME SECTION */
+
+.section-bottom-hero {
+  position: relative;
   height: 100vh;
   background-color: orangered;
-  transition: all 2s;
+  transition: all 1.3s;
 }
 
 .scroll-trigger {
+  /* height: 150vh;
+  transform: translateY(-50rem); */
+
+  position: absolute;
+  width: 100%;
   height: 150vh;
-  transform: translateY(-70vh);
+  transform: translateY(calc(-100vh + 30rem));
 }
 
 /* .section-about-me:hover,
@@ -113,7 +121,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12rem 20rem;
+  padding: 14rem 20rem;
 }
 
 .hero-description {
@@ -122,12 +130,36 @@ body {
   width: 54rem;
 }
 
+.section-about-me {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.open {
+  opacity: 1;
+}
+
 .about-img {
   height: 100px;
   width: 100px;
 }
 
+.divider {
+  margin-top: 70rem;
+  background-color: purple;
+  height: 20rem;
+}
+
 .lorem {
-  font-size: 3.2rem;
-  line-height: 1.8;
+  font-size: 5.6rem;
+  line-height: 2.8;
 }
