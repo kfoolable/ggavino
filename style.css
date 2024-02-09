@@ -28,7 +28,7 @@ body {
 
 .borders div {
   position: absolute;
-  background-color: black;
+  background-color: beige;
 }
 
 .top,
@@ -59,6 +59,103 @@ body {
 
 .right {
   right: 0;
+}
+
+/* TITLE and NAV */
+
+.tops {
+  position: fixed;
+  z-index: 2;
+}
+
+.top-title {
+  left: 5rem;
+  top: 7px;
+}
+
+.scroll {
+  left: 5%;
+  transform: translateY(-60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  position: absolute;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.scroll-arrow {
+  animation: updown 2s ease infinite;
+  height: 12px;
+  width: 12px;
+}
+
+.scroll p {
+  transform: rotate(-90deg);
+}
+
+.kgg-title {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.top-nav {
+  right: 5.2rem;
+  top: 2.4rem;
+}
+
+.top-nav-list {
+  display: flex;
+  gap: 2.4rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.top-nav-list {
+  list-style: none;
+}
+
+.top-nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.socials {
+  right: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.socials-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.socials-link {
+  text-decoration: none;
+  color: black;
+}
+
+.socials-logo {
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 /* MAIN PAGE */
@@ -136,7 +233,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in;
 
-  background-color: bisque;
+  /* background-color: bisque; */
   height: 100vh;
   width: 100%;
 
@@ -153,17 +250,18 @@ body {
 .about-me {
   display: flex;
   position: relative;
-  margin-left: 10rem;
+  margin-left: 8rem;
 
   gap: 10.6rem;
   width: 95rem;
 }
 
-.page-title {
+.ab-title {
   position: absolute;
   font-size: 4.2rem;
   top: 10%;
   left: 10%;
+  text-transform: uppercase;
 }
 
 .about-me-left {
@@ -225,3 +323,18 @@ body {
   font-size: 5.6rem;
   line-height: 2.8;
 } */
+
+/* Temporary */
+.section-hero {
+  display: none;
+}
+
+.section-about-me {
+  display: none;
+}
+
+.section-bottom-hero {
+  display: none;
+}
+
+/* SKILLS SECTION */

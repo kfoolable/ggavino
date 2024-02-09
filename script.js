@@ -18,8 +18,6 @@ window.addEventListener('scroll', function () {
     bottomHeroSection.classList.remove('scroll-trigger');
     aboutMeSection.classList.remove('open');
   }
-
-  console.log(scrollPos);
 });
 
 console.log('Hello');
