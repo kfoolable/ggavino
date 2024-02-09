@@ -256,9 +256,9 @@ body {
   width: 95rem;
 }
 
-.ab-title {
+.page-title {
   position: absolute;
-  font-size: 4.2rem;
+  font-size: 3.8rem;
   top: 10%;
   left: 10%;
   text-transform: uppercase;
