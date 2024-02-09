@@ -5,7 +5,7 @@ const aboutMeSection = document.querySelector('.section-about-me');
 
 const divider = document.querySelector('.divider');
 
-let minScrollPos = 0;
+let minScrollPos = 10;
 
 window.addEventListener('scroll', function () {
   const scrollPos = window.scrollY;
