@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  /* z-index: 3; */
   pointer-events: none;
 }
 
@@ -261,7 +261,8 @@ body {
   position: absolute;
   font-size: 3.8rem;
   top: 10%;
-  left: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   text-transform: uppercase;
 }
 
@@ -318,12 +319,12 @@ body {
   margin-top: 100rem;
   background-color: purple;
   height: 30rem;
-}
+} */
 
 .lorem {
   font-size: 5.6rem;
   line-height: 2.8;
-} */
+}
 
 /* Temporary */
 .section-hero {
@@ -338,9 +339,13 @@ body {
   display: none;
 }
 
-.borders div {
+/* .section-skills {
   display: none;
-}
+} */
+
+/* .borders div {
+  display: none;
+} */
 
 /* SKILLS SECTION */
 .section-skills {
@@ -353,30 +358,47 @@ body {
 .skills {
   display: flex;
   align-items: center;
-  gap: 3.2rem;
-  height: 50rem;
-  width: 100rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  /* height: 50rem; */
+  width: 90rem;
+  margin-top: 8rem;
 }
 
 .icons {
-  height: 8rem;
-  width: 8rem;
+  width: 16rem;
+  height: 19rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
+}
+
+.icon {
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   z-index: 2;
 }
 
-.icons::before {
+.icon::before {
   content: '';
-  width: 100px;
-  height: 100px;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: antiquewhite;
   position: absolute;
   z-index: -1;
+}
+
+.icons p {
+  font-size: 1.8rem;
 }
