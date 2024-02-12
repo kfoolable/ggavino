@@ -22,7 +22,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 3;
+  z-index: 9;
   pointer-events: none;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .tops {
   position: fixed;
-  z-index: 4;
+  z-index: 10;
 }
 
 .top-title {
@@ -211,6 +211,7 @@ body {
   width: 54rem;
   margin: 0 auto;
   padding-top: 10rem;
+
   /* top: 15%;
   left: 50%;
   position: absolute;
@@ -245,11 +246,9 @@ body {
   transition-delay: 1s;
 }
 
-.about-me {
+.container {
   width: 90%;
   height: 85%;
-
-  background-color: bisque;
 
   display: flex;
   flex-direction: column;
@@ -257,22 +256,46 @@ body {
   align-items: center;
 }
 
+.about-me {
+  /* background-color: bisque; */
+
+  position: relative;
+}
+
+.page-title {
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 3.4rem;
+}
+
 .ab-content {
   display: flex;
-  gap: 6.2rem;
+  gap: 6.8rem;
   width: 95rem;
+  /* height: 50rem; */
 }
 
 .about-me-left {
   display: flex;
   flex-direction: column;
   margin-top: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 6.4rem;
+  width: 50rem;
+}
+
+.ab-upper {
+  margin-top: 3.2rem;
+}
+
+.ab-lower {
+  margin-top: 2.4rem;
 }
 
 .about-me-left h3 {
   font-size: 3.2rem;
   letter-spacing: 1px;
+  width: 23.4rem;
 }
 
 .about-me-left p {
@@ -297,13 +320,34 @@ body {
   border-radius: 9px;
   font-size: 1.8rem;
   text-transform: uppercase;
-  margin-top: 1.8rem;
+  margin-top: 1.6rem;
+}
+
+.about-me-right {
+  width: 70%;
+}
+
+.section-skills {
+  background-color: bisque;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills {
+  position: relative;
 }
 
 .divider {
   margin-top: 165rem;
   background-color: purple;
   height: 30rem;
+
+  /* position: absolute; */
+  position: relative;
+  z-index: 8;
 }
 
 .lorem {
