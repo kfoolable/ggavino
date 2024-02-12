@@ -22,7 +22,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  /* z-index: 3; */
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .tops {
   position: fixed;
-  z-index: 2;
+  z-index: 4;
 }
 
 .top-title {
@@ -194,49 +194,52 @@ body {
 
 .section-bottom-hero {
   position: relative;
-  height: 100vh;
+  height: 60vh;
   background-color: orangered;
   transition: all 1.3s;
+  width: 100%;
 }
 
 .scroll-trigger {
   position: absolute;
   width: 100%;
-  height: 130vh;
+  height: 250vh;
   transform: translateY(calc(-100vh + 30rem));
 }
 
-/* .section-about-me:hover,
-.section-about-me:active {
-  height: 100vh;
-  transform: translateY(-50vh);
-} */
-
 .hero-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14rem 20rem;
+  width: 54rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  /* top: 15%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%); */
 }
 
 .hero-description {
   font-size: 2rem;
   text-align: center;
-  width: 54rem;
 }
 
 .section-about-me {
-  top: 50%;
+  /* position: sticky;
+  top: 0; */
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 
   position: fixed;
   opacity: 0;
   transition: opacity 0.3s ease-in;
 
   /* background-color: bisque; */
-  height: 100vh;
+  height: 100%;
   width: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   display: flex;
   align-items: center;
@@ -246,52 +249,44 @@ body {
 .open {
   opacity: 1;
   transition-delay: 1s;
+
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 .about-me {
-  display: flex;
-  position: relative;
-  margin-left: 8rem;
+  width: 90%;
+  height: 85%;
 
-  gap: 10.6rem;
-  width: 95rem;
+  /* background-color: bisque; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.page-title {
-  position: absolute;
-  font-size: 3.8rem;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-transform: uppercase;
+.ab-content {
+  display: flex;
+  gap: 6.2rem;
+  width: 95rem;
 }
 
 .about-me-left {
-  width: 95rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 3.6rem;
+  margin-top: auto;
+  margin-bottom: 4rem;
 }
 
 .about-me-left h3 {
   font-size: 3.2rem;
   letter-spacing: 1px;
-  width: 23.4rem;
 }
 
 .about-me-left p {
   font-size: 1.6rem;
-  line-height: 1.4;
-  letter-spacing: 1px;
-}
-
-.ab-upper {
-  margin-top: 2.8rem;
-}
-
-.ab-lower {
-  margin-top: 2.2rem;
 }
 
 .about-img {
@@ -315,11 +310,11 @@ body {
   margin-top: 1.8rem;
 }
 
-/* .divider {
-  margin-top: 100rem;
+.divider {
+  margin-top: 165rem;
   background-color: purple;
   height: 30rem;
-} */
+}
 
 .lorem {
   font-size: 5.6rem;
@@ -327,7 +322,7 @@ body {
 }
 
 /* Temporary */
-.section-hero {
+/* .section-hero {
   display: none;
 }
 
@@ -337,23 +332,23 @@ body {
 
 .section-bottom-hero {
   display: none;
-}
-
-/* .section-skills {
-  display: none;
 } */
+
+.section-skills {
+  display: none;
+}
 
 /* .borders div {
   display: none;
 } */
 
 /* SKILLS SECTION */
-.section-skills {
+/* .section-skills {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .skills {
   display: flex;
