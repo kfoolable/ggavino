@@ -389,6 +389,7 @@ body {
 
 .section-projects {
   height: 100%;
+  width: 100vw;
   /* background-color: antiquewhite; */
 
   display: flex;
@@ -398,6 +399,69 @@ body {
 
 .sect-projects {
   position: relative;
+  width: 95%;
+}
+
+.projects {
+  margin-top: 15rem;
+  display: grid;
+  grid-template-columns: 100fr 1fr 100fr;
+}
+
+.project-text-box {
+  align-self: center;
+  justify-self: end;
+  width: 46rem;
+}
+
+.project-description {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin: 0 3rem 0 1.4rem;
+}
+
+.project-year {
+  font-size: 1.4rem;
+  width: 3rem;
+  margin-left: auto;
+}
+
+.project-title {
+  font-size: 3.2rem;
+  position: absolute;
+  width: 46rem;
+  margin-left: 1.4rem;
+  margin-top: 5px;
+}
+
+.middle {
+  width: 1rem;
+}
+
+.line {
+  border: 1px solid black;
+  height: 28rem;
+  width: 0;
+  margin: 0 auto;
+}
+
+.project-img {
+  height: 200px;
+  width: 200px;
+}
+
+.project-img-box {
+  justify-self: center;
+  /* margin-left: 10rem; */
+  height: 50rem;
+  width: 70rem;
+}
+
+.project-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .divider {
