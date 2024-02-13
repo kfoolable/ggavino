@@ -30,4 +30,20 @@ window.addEventListener('scroll', function () {
   }
 });
 
-console.log('Hello');
+const observer = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting) {
+      skillsSection.classList.add('open');
+    } else {
+      skillsSection.classList.remove('open');
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+observer.observe(skillsSection);
