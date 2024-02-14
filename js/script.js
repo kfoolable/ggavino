@@ -37,14 +37,10 @@ const observer = new IntersectionObserver(
       if (entry.target === skillsSection) {
         if (entry.isIntersecting) {
           skillsSection.classList.add('open');
-        } else {
-          skillsSection.classList.remove('open');
         }
       } else if (entry.target === projectsSection) {
         if (entry.isIntersecting) {
           projectsSection.classList.add('open');
-        } else {
-          projectsSection.classList.remove('open');
         }
       }
     });
