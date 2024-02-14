@@ -3,6 +3,7 @@
 const bottomHeroSection = document.querySelector('.section-bottom-hero');
 const aboutMeSection = document.querySelector('.section-about-me');
 const skillsSection = document.querySelector('.section-skills');
+const projectsSection = document.querySelector('.section-projects');
 
 const divider = document.querySelector('.divider');
 
@@ -32,18 +33,27 @@ window.addEventListener('scroll', function () {
 
 const observer = new IntersectionObserver(
   (entries) => {
-    const ent = entries[0];
-    console.log(ent);
-
-    if (ent.isIntersecting) {
-      skillsSection.classList.add('open');
-    } else {
-      skillsSection.classList.remove('open');
-    }
+    entries.forEach((entry) => {
+      if (entry.target === skillsSection) {
+        if (entry.isIntersecting) {
+          skillsSection.classList.add('open');
+        } else {
+          skillsSection.classList.remove('open');
+        }
+      } else if (entry.target === projectsSection) {
+        if (entry.isIntersecting) {
+          projectsSection.classList.add('open');
+        } else {
+          projectsSection.classList.remove('open');
+        }
+      }
+    });
   },
   {
     root: null,
     threshold: 0,
   }
 );
-observer.observe(skillsSection);
+
+const elements = [skillsSection, projectsSection];
+elements.forEach((els) => observer.observe(els));
