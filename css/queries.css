@@ -1,10 +1,178 @@
 @media (max-width: 84em) {
+  .kgg-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-me {
+    font-size: 5.8rem;
+  }
+
+  .hero-txt {
+    font-size: 3.8rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .project-description-box-left {
+    right: 7%;
+  }
+
+  .project-description-box-right {
+    left: 2%;
+  }
+
+  .project-text-box-left {
+    right: 1%;
+  }
+
+  .project-text-box-right {
+    left: 2%;
+  }
 }
 
 @media (max-width: 75em) {
+  .kgg-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-me {
+    font-size: 5.5rem;
+  }
+
+  .hero-txt {
+    font-size: 3.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.7rem;
+  }
+
+  .project-description-box-left {
+    top: 22%;
+    left: 20%;
+  }
+
+  .project-description-box-right {
+    top: 48%;
+  }
+
+  .project-img-box {
+    height: 35rem;
+    width: 50rem;
+  }
+
+  .skill {
+    height: 18rem;
+    width: 14rem;
+  }
+
+  .skill::before {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .skill img {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .one {
+    height: 18rem;
+  }
+
+  .two {
+    height: 24rem;
+    top: -30%;
+  }
+
+  .three {
+    top: -28%;
+    height: 27rem;
+  }
 }
 
 @media (max-width: 59em) {
+  .scroll {
+    left: 8%;
+  }
+
+  .container {
+    height: 85%;
+    width: 85%;
+  }
+
+  .ab-content {
+    align-items: center;
+    gap: 1.2rem;
+    width: 90rem;
+  }
+
+  .about-me-left {
+    width: 40rem;
+  }
+
+  .about-img {
+    width: 35rem;
+    height: auto;
+  }
+
+  .skills {
+    width: 70rem;
+  }
+
+  .project-description-box-left {
+    top: 26%;
+    left: 3%;
+  }
+
+  .project-description-box-right {
+    top: 52%;
+  }
+
+  .project-description {
+    font-size: 1.2rem;
+    width: 38rem;
+  }
+
+  .project-text-box-left {
+    width: 38rem;
+    right: 1%;
+  }
+
+  .project-year {
+    font-size: 1.2rem;
+    width: 2rem;
+  }
+
+  .project-title {
+    font-size: 2.6rem;
+  }
+
+  .project-img-box {
+    height: 25rem;
+    width: 36rem;
+  }
+
+  .one {
+    height: 12rem;
+  }
+
+  .two {
+    height: 15rem;
+    top: -30%;
+  }
+
+  .three {
+    top: -40%;
+    height: 20rem;
+  }
+
+  .card {
+    width: 62rem;
+    height: 34rem;
+  }
 }
 
 @media (max-width: 44em) {
