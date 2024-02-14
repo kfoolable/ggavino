@@ -65,10 +65,10 @@ function isActive(entries) {
       else ggTitle.classList.remove('is-active');
     }
 
-    if (entry.target === aboutMeSection) {
-      if (entry.isIntersecting) aboutEl.classList.add('is-active');
-      else aboutEl.classList.remove('is-active');
-    }
+    // if (entry.target === aboutMeSection) {
+    //   if (entry.isIntersecting) aboutEl.classList.add('is-active');
+    //   else aboutEl.classList.remove('is-active');
+    // }
 
     if (entry.target === skillsSection) {
       if (entry.isIntersecting) {
@@ -102,9 +102,14 @@ navLinks.forEach(function (link) {
   link.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const id = link.getAttribute('href');
-    console.log(id);
-    const element = document.querySelector(id);
+    const href = link.getAttribute('href');
+    const id = link.getAttribute('id');
+    // console.log(id);
+    const element = document.querySelector(href);
+
+    // if (id === 'about') {
+    //   aboutMeSection.classList.add('scroll-trigger');
+    // }
 
     element.scrollIntoView({
       behavior: 'smooth',
