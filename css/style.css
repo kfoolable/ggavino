@@ -146,6 +146,7 @@ body {
   text-decoration: none;
   color: #999;
   letter-spacing: 1px;
+  transition: all 0.3s;
 }
 
 /* Add logic to JS */
@@ -692,6 +693,6 @@ body {
 
 .open {
   opacity: 1;
-  transition-delay: 1s;
+  transition-delay: 0.7s;
   pointer-events: visible;
 }
