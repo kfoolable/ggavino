@@ -1,25 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Galada&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-  font-family: 'Encode Sans SC', sans-serif;
-  color: #333;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: 'smooth';
-}
-
-body {
-  color: #000;
-  font-family: sans-serif;
-}
-
 /* BORDERS */
 
 .borders {
@@ -69,11 +49,6 @@ body {
 
 /* TITLE and NAV */
 
-.tops {
-  position: fixed;
-  z-index: 10;
-}
-
 .top-title {
   left: 5rem;
   top: 7px;
@@ -87,10 +62,6 @@ body {
   align-items: center;
   gap: 1.8rem;
   position: absolute;
-}
-
-.semi-font {
-  font-family: 'Encode Sans Semi Condensed';
 }
 
 @keyframes updown {
@@ -151,11 +122,6 @@ body {
   color: #999;
   letter-spacing: 1px;
   transition: all 0.3s;
-}
-
-/* Add logic to JS */
-.is-active {
-  color: #222;
 }
 
 .socials {
@@ -268,16 +234,6 @@ body {
   justify-content: center;
 }
 
-.container {
-  width: 90%;
-  height: 85%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .about-me {
   position: relative;
 }
@@ -375,10 +331,6 @@ body {
 
 .sect-skills {
   position: relative;
-}
-
-.sk-txt {
-  color: #e9af04;
 }
 
 .skills {
@@ -698,10 +650,4 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.open {
-  opacity: 1;
-  transition-delay: 0.7s;
-  pointer-events: visible;
 }

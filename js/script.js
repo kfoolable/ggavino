@@ -32,6 +32,30 @@ const elements = [
 ];
 
 window.addEventListener('scroll', scrollEvent);
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const href = link.getAttribute('href');
+    // console.log(id);
+    const element = document.querySelector(href);
+
+    element.scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
+
+homeClick.forEach((els) => {
+  els.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    heroSection.scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
+
 const observer = new IntersectionObserver(isActive, {
   root: null,
   threshold: 0.15,
@@ -95,27 +119,3 @@ function isActive(entries) {
     }
   });
 }
-
-navLinks.forEach((link) => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    const href = link.getAttribute('href');
-    // console.log(id);
-    const element = document.querySelector(href);
-
-    element.scrollIntoView({
-      behavior: 'smooth',
-    });
-  });
-});
-
-homeClick.forEach((els) => {
-  els.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    heroSection.scrollIntoView({
-      behavior: 'smooth',
-    });
-  });
-});
