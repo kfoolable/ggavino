@@ -8,6 +8,7 @@ const projectsSection = document.querySelector('.section-projects');
 const contactSection = document.querySelector('.section-contact');
 
 const ggTitle = document.querySelector('.kgg-title');
+const arrowUp = document.querySelector('.arrow-up');
 
 const topNav = document.querySelector('.top-nav');
 const navLinks = document.querySelectorAll('.top-nav-link');
@@ -19,6 +20,8 @@ const divider = document.querySelector('.divider');
 
 let minScrollPos = 10;
 let maxScrollPos = 50;
+
+const homeClick = [ggTitle, arrowUp];
 
 const elements = [
   heroSection,
@@ -93,19 +96,25 @@ function isActive(entries) {
   });
 }
 
-navLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
     e.preventDefault();
 
     const href = link.getAttribute('href');
     // console.log(id);
     const element = document.querySelector(href);
 
-    // if (id === 'about') {
-    //   aboutMeSection.classList.add('scroll-trigger');
-    // }
-
     element.scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
+
+homeClick.forEach((els) => {
+  els.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    heroSection.scrollIntoView({
       behavior: 'smooth',
     });
   });
