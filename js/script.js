@@ -65,11 +65,6 @@ function isActive(entries) {
       else ggTitle.classList.remove('is-active');
     }
 
-    // if (entry.target === aboutMeSection) {
-    //   if (entry.isIntersecting) aboutEl.classList.add('is-active');
-    //   else aboutEl.classList.remove('is-active');
-    // }
-
     if (entry.target === skillsSection) {
       if (entry.isIntersecting) {
         skillsSection.classList.add('open');
@@ -103,7 +98,6 @@ navLinks.forEach(function (link) {
     e.preventDefault();
 
     const href = link.getAttribute('href');
-    const id = link.getAttribute('id');
     // console.log(id);
     const element = document.querySelector(href);
 
