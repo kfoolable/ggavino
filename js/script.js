@@ -97,6 +97,7 @@ function isActive(entries) {
         skillsSection.classList.add('open');
         skillsEl.classList.add('is-active');
       } else {
+        // skillsSection.classList.remove('open');
         skillsEl.classList.remove('is-active');
       }
     }
@@ -106,6 +107,7 @@ function isActive(entries) {
         projectsSection.classList.add('open');
         projectsEl.classList.add('is-active');
       } else {
+        // projectsSection.classList.remove('open');
         projectsEl.classList.remove('is-active');
       }
     }
