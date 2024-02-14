@@ -318,7 +318,7 @@
 .section-skills {
   /* background-color: bisque; */
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   opacity: 0;
   transition: opacity 0.3s ease-in;
 
@@ -386,7 +386,7 @@
 
 .section-projects {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 10rem;
 
   opacity: 0;
@@ -502,7 +502,7 @@
   /* margin-left: 10rem; */
   height: 45rem;
   width: 70rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .project-img-box img {
