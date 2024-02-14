@@ -370,7 +370,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #ddd;
 }
 
 .sect-skills {
@@ -689,6 +689,8 @@ body {
   height: 30rem;
   position: relative;
   z-index: 8;
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.5),
+    0px -10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .divider-img {
