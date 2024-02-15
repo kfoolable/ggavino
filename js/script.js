@@ -10,7 +10,9 @@ const contactSection = document.querySelector('.section-contact');
 const ggTitle = document.querySelector('.kgg-title');
 const arrowUp = document.querySelector('.arrow-up');
 
+const btnNav = document.querySelector('.btn-mobile-nav');
 const topNav = document.querySelector('.top-nav');
+const navLinksEl = document.querySelector('.top-nav-list');
 const navLinks = document.querySelectorAll('.top-nav-link');
 const aboutEl = document.getElementById('about');
 const skillsEl = document.getElementById('skills');
@@ -30,6 +32,22 @@ const elements = [
   projectsSection,
   contactSection,
 ];
+
+btnNav.addEventListener('click', function () {
+  topNav.classList.toggle('nav-open');
+});
+
+const newItem = document.createElement('li');
+
+const newLink = document.createElement('a');
+newLink.setAttribute('id', 'home');
+newLink.classList.add('top-nav-link');
+newLink.setAttribute('href', '#home-section');
+newLink.textContent = 'Home';
+
+newItem.appendChild(newLink);
+
+navLinksEl.insertBefore(newItem, navLinksEl.firstChild);
 
 window.addEventListener('scroll', scrollEvent);
 navLinks.forEach((link) => {
@@ -82,6 +100,7 @@ function scrollEvent() {
     bottomHeroSection.classList.remove('scroll-trigger');
     aboutMeSection.classList.remove('open');
     topNav.classList.remove('open');
+    topNav.classList.remove('nav-open');
   }
 }
 
