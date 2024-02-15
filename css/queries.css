@@ -1,3 +1,48 @@
+@media (max-height: 44em) {
+  .hero-me {
+    font-size: 5.8rem;
+  }
+
+  .hero-txt {
+    font-size: 3.8rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .hero-bottom {
+    padding-top: 9rem;
+  }
+
+  .scroll-trigger {
+    transform: translateY(calc(-100vh + 10rem));
+  }
+
+  .divider {
+    margin-top: 110rem;
+  }
+
+  .ab-content {
+    margin-top: 5rem;
+    height: 45rem;
+    width: 87rem;
+  }
+
+  .about-me-right {
+    margin-top: auto;
+  }
+
+  .about-img {
+    width: 45rem;
+    height: auto;
+  }
+
+  .skills {
+    margin-top: 5rem;
+  }
+}
+
 @media (max-width: 84em) {
   .top-nav {
     right: 4rem;
@@ -23,6 +68,10 @@
 
   .hero-description {
     font-size: 1.8rem;
+  }
+
+  .socials {
+    right: 8px;
   }
 
   .project-description-box-left {
@@ -79,8 +128,9 @@
     width: 85rem;
   }
 
-  .ab-work-together {
-    font-size: 1.6rem;
+  .about-img {
+    width: 45rem;
+    height: auto;
   }
 
   .project-description-box-left {
@@ -92,8 +142,20 @@
     top: 48%;
   }
 
+  .project-title {
+    font-size: 2.8rem;
+  }
+
+  .project-text-box-left {
+    width: 42rem;
+  }
+
+  .project-text-box-right {
+    width: 42rem;
+  }
+
   .project-img-box {
-    height: 35rem;
+    height: 30rem;
     width: 50rem;
   }
 
@@ -131,6 +193,7 @@
   .borders {
     transition: all 0.3s;
     opacity: 0;
+    visibility: hidden;
   }
 
   .scroll {
@@ -140,6 +203,16 @@
   .container {
     height: 85%;
     width: 85%;
+  }
+
+  .socials {
+    display: none;
+    visibility: hidden;
+  }
+
+  .top-nav {
+    display: none;
+    visibility: hidden;
   }
 
   .ab-content {

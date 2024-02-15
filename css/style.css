@@ -519,10 +519,9 @@
 
 .project-img-box {
   justify-self: center;
-  /* margin-left: 10rem; */
   height: 45rem;
   width: 70rem;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .project-img-box img {
