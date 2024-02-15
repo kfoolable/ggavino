@@ -1,4 +1,4 @@
-@media (max-height: 44em) {
+@media (max-height: 56em) {
   .hero-me {
     font-size: 5.8rem;
   }
@@ -134,7 +134,7 @@
   }
 
   .project-description-box-left {
-    top: 22%;
+    top: 18%;
     left: 20%;
   }
 
@@ -190,6 +190,15 @@
 }
 
 @media (max-width: 59em) {
+  .tops {
+    position: absolute;
+  }
+
+  .btn-mobile-nav {
+    position: fixed;
+    display: block;
+  }
+
   .borders {
     transition: all 0.3s;
     opacity: 0;
@@ -197,7 +206,7 @@
   }
 
   .scroll {
-    left: 8%;
+    left: 4%;
   }
 
   .container {
