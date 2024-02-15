@@ -54,6 +54,20 @@
   top: 7px;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3.5rem;
+  width: 3.5rem;
+  color: #333;
+}
+
 .scroll {
   left: 5%;
   transform: translateY(-60%);
@@ -247,7 +261,7 @@
 .page-title {
   font-size: 3.8rem;
   position: absolute;
-  top: 4.2rem;
+  top: 10rem;
   letter-spacing: 2px;
 }
 
@@ -346,7 +360,7 @@
   flex-wrap: wrap;
 
   width: 90rem;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 
 .skill {
