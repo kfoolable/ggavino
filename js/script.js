@@ -11,6 +11,7 @@ const ggTitle = document.querySelector('.kgg-title');
 const arrowUp = document.querySelector('.arrow-up');
 
 const btnNav = document.querySelector('.btn-mobile-nav');
+const iconNav = document.querySelector('.icon-mobile-nav');
 const topNav = document.querySelector('.top-nav');
 const navLinksEl = document.querySelector('.top-nav-list');
 const navLinks = document.querySelectorAll('.top-nav-link');
@@ -130,8 +131,10 @@ function isActive(entries) {
     if (entry.target === contactSection) {
       if (entry.isIntersecting) {
         contactEl.classList.add('is-active');
+        iconNav.classList.add('btn-color');
       } else {
         contactEl.classList.remove('is-active');
+        iconNav.classList.remove('btn-color');
       }
     }
   });
