@@ -107,6 +107,11 @@
 }
 
 @media (max-width: 75em) {
+  .top-title {
+    left: 3.3rem;
+    top: 2px;
+  }
+
   .kgg-title {
     font-size: 2.6rem;
   }
@@ -123,6 +128,10 @@
     font-size: 1.7rem;
   }
 
+  .top-nav-link {
+    font-size: 1.6rem;
+  }
+
   .ab-content {
     gap: 4.8rem;
     width: 85rem;
@@ -131,6 +140,10 @@
   .about-img {
     width: 45rem;
     height: auto;
+  }
+
+  .socials {
+    right: 5px;
   }
 
   .project-description-box-left {
@@ -187,9 +200,203 @@
     top: -28%;
     height: 27rem;
   }
+
+  .top,
+  .bottom {
+    height: 3.5rem;
+  }
+
+  .left,
+  .right {
+    width: 3.5rem;
+  }
 }
 
 @media (max-width: 59em) {
+  .top-title {
+    top: -1px;
+  }
+
+  .top-nav {
+    right: 3rem;
+    top: 7px;
+  }
+
+  .hero-me {
+    font-size: 5rem;
+  }
+
+  .hero-txt {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    height: 95%;
+    width: 95%;
+  }
+
+  .page-title {
+    top: 3%;
+    font-size: 3.4rem;
+  }
+
+  .socials {
+    position: fixed;
+  }
+
+  .ab-content {
+    gap: 5rem;
+    width: 65rem;
+    height: 40rem;
+  }
+
+  .about-me-left {
+    width: 37rem;
+  }
+
+  .about-me-left h3 {
+    font-size: 2.8rem;
+  }
+
+  .about-me-left p {
+    font-size: 1.4rem;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  .ab-work-together {
+    font-size: 1.6rem;
+  }
+
+  .skills {
+    width: 90%;
+    gap: 1.5rem;
+  }
+
+  .skill {
+    height: 15rem;
+    width: 12rem;
+  }
+
+  .skill img {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .skill p {
+    font-size: 1.6rem;
+  }
+
+  .skill::before {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .project-description-box-left {
+    top: 20%;
+    left: 15%;
+  }
+
+  .project-description-box-right {
+    top: 52%;
+  }
+
+  .project-description {
+    font-size: 1.1rem;
+    width: 30rem;
+  }
+
+  .project-text-box-left {
+    width: 30rem;
+    right: 1%;
+  }
+
+  .project-year {
+    font-size: 1.1rem;
+    width: 2rem;
+  }
+
+  .project-title {
+    font-size: 2.2rem;
+  }
+
+  .project-img-box {
+    height: 25rem;
+    width: 36rem;
+  }
+
+  .one {
+    height: 12rem;
+  }
+
+  .two {
+    height: 15rem;
+    top: -30%;
+  }
+
+  .three {
+    top: -40%;
+    height: 20rem;
+  }
+
+  .project-img-box {
+    height: 23rem;
+    width: 33rem;
+  }
+
+  .card {
+    width: 50rem;
+    height: 35rem;
+  }
+
+  .contact {
+    font-size: 1.6rem;
+  }
+
+  .contact-title {
+    font-size: 3.4rem;
+  }
+
+  .cont-message {
+    font-size: 1.4rem;
+    width: 43rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+    width: 15rem;
+    height: 5rem;
+  }
+
+  .socials-logo {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .top,
+  .bottom {
+    height: 3rem;
+  }
+
+  .left,
+  .right {
+    width: 3rem;
+  }
+
+  .copyright {
+    bottom: 5rem;
+  }
+}
+
+@media (max-width: 44em) {
   .tops {
     position: absolute;
   }
@@ -252,90 +459,6 @@
   .scroll {
     left: 4%;
   }
-
-  .container {
-    height: 85%;
-    width: 85%;
-  }
-
-  .socials {
-    display: none;
-    visibility: hidden;
-  }
-
-  .ab-content {
-    align-items: center;
-    gap: 1.2rem;
-    width: 90rem;
-  }
-
-  .about-me-left {
-    width: 40rem;
-  }
-
-  .about-img {
-    width: 35rem;
-    height: auto;
-  }
-
-  .skills {
-    width: 70rem;
-  }
-
-  .project-description-box-left {
-    top: 26%;
-    left: 3%;
-  }
-
-  .project-description-box-right {
-    top: 52%;
-  }
-
-  .project-description {
-    font-size: 1.2rem;
-    width: 38rem;
-  }
-
-  .project-text-box-left {
-    width: 38rem;
-    right: 1%;
-  }
-
-  .project-year {
-    font-size: 1.2rem;
-    width: 2rem;
-  }
-
-  .project-title {
-    font-size: 2.6rem;
-  }
-
-  .project-img-box {
-    height: 25rem;
-    width: 36rem;
-  }
-
-  .one {
-    height: 12rem;
-  }
-
-  .two {
-    height: 15rem;
-    top: -30%;
-  }
-
-  .three {
-    top: -40%;
-    height: 20rem;
-  }
-
-  .card {
-    width: 62rem;
-    height: 34rem;
-  }
-}
-
-@media (max-width: 44em) {
 }
 
 @media (max-width: 34em) {
