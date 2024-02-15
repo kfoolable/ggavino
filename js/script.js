@@ -23,8 +23,6 @@ const divider = document.querySelector('.divider');
 let minScrollPos = 10;
 let maxScrollPos = 50;
 
-const homeClick = [ggTitle, arrowUp];
-
 const elements = [
   heroSection,
   aboutMeSection,
@@ -42,8 +40,8 @@ const newItem = document.createElement('li');
 const newLink = document.createElement('a');
 newLink.setAttribute('id', 'home');
 newLink.classList.add('top-nav-link');
-newLink.setAttribute('href', '#home-section');
-newLink.textContent = 'Home';
+newLink.setAttribute('href', '#home');
+newLink.textContent = 'home';
 
 newItem.appendChild(newLink);
 
@@ -63,6 +61,8 @@ navLinks.forEach((link) => {
     });
   });
 });
+
+const homeClick = [ggTitle, arrowUp, newLink];
 
 homeClick.forEach((els) => {
   els.addEventListener('click', function (e) {
