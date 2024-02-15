@@ -13,6 +13,7 @@ const arrowUp = document.querySelector('.arrow-up');
 const btnNav = document.querySelector('.btn-mobile-nav');
 const iconNav = document.querySelector('.icon-mobile-nav');
 const topNav = document.querySelector('.top-nav');
+const socialLogos = document.querySelectorAll('.socials-logo');
 const navLinksEl = document.querySelector('.top-nav-list');
 const navLinks = document.querySelectorAll('.top-nav-link');
 const abContent = document.querySelector('.ab-content');
@@ -35,10 +36,11 @@ const elements = [
   abContent,
 ];
 
-const homeClick = [ggTitle, arrowUp];
+const homeClick = [arrowUp, houseEl];
 
 btnNav.addEventListener('click', function () {
   topNav.classList.toggle('nav-open');
+  socialLogos.forEach((logo) => logo.classList.toggle('btn-color'));
 });
 
 window.addEventListener('scroll', scrollEvent);
@@ -132,9 +134,11 @@ function isActive(entries) {
       if (entry.isIntersecting) {
         contactEl.classList.add('is-active');
         iconNav.classList.add('btn-color');
+        socialLogos.forEach((logo) => logo.classList.add('btn-color'));
       } else {
         contactEl.classList.remove('is-active');
         iconNav.classList.remove('btn-color');
+        socialLogos.forEach((logo) => logo.classList.remove('btn-color'));
       }
     }
   });
