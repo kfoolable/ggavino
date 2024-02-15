@@ -14,6 +14,8 @@ const btnNav = document.querySelector('.btn-mobile-nav');
 const topNav = document.querySelector('.top-nav');
 const navLinksEl = document.querySelector('.top-nav-list');
 const navLinks = document.querySelectorAll('.top-nav-link');
+const abContent = document.querySelector('.ab-content');
+const houseEl = document.getElementById('house');
 const aboutEl = document.getElementById('about');
 const skillsEl = document.getElementById('skills');
 const projectsEl = document.getElementById('projects');
@@ -29,23 +31,14 @@ const elements = [
   skillsSection,
   projectsSection,
   contactSection,
+  abContent,
 ];
+
+const homeClick = [ggTitle, arrowUp];
 
 btnNav.addEventListener('click', function () {
   topNav.classList.toggle('nav-open');
 });
-
-const newItem = document.createElement('li');
-
-const newLink = document.createElement('a');
-newLink.setAttribute('id', 'home');
-newLink.classList.add('top-nav-link');
-newLink.setAttribute('href', '#home');
-newLink.textContent = 'home';
-
-newItem.appendChild(newLink);
-
-navLinksEl.insertBefore(newItem, navLinksEl.firstChild);
 
 window.addEventListener('scroll', scrollEvent);
 navLinks.forEach((link) => {
@@ -61,8 +54,6 @@ navLinks.forEach((link) => {
     });
   });
 });
-
-const homeClick = [ggTitle, arrowUp, newLink];
 
 homeClick.forEach((els) => {
   els.addEventListener('click', function (e) {
@@ -106,6 +97,11 @@ function scrollEvent() {
 
 function isActive(entries) {
   entries.forEach((entry) => {
+    if (entry.target === abContent) {
+      if (entry.isIntersecting) houseEl.classList.add('is-active');
+      else houseEl.classList.remove('is-active');
+    }
+
     if (entry.target === heroSection) {
       if (entry.isIntersecting) ggTitle.classList.add('is-active');
       else ggTitle.classList.remove('is-active');
