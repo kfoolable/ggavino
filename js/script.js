@@ -40,7 +40,12 @@ const homeClick = [arrowUp, houseEl];
 
 btnNav.addEventListener('click', function () {
   topNav.classList.toggle('nav-open');
-  socialLogos.forEach((logo) => logo.classList.toggle('btn-color'));
+
+  const contactisActive = contactEl.classList.contains('is-active');
+  // console.log(contactisActive);
+
+  if (contactisActive)
+    socialLogos.forEach((logo) => logo.classList.toggle('btn-color'));
 });
 
 window.addEventListener('scroll', scrollEvent);
