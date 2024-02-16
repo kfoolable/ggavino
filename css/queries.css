@@ -572,8 +572,12 @@
     font-size: 2.2rem;
   }
 
+  .hero-upper {
+    width: 35rem;
+  }
+
   .hero-bottom {
-    width: 40rem;
+    width: 35rem;
   }
 
   .hero-description {
