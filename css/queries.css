@@ -278,6 +278,7 @@
 
   .skills {
     width: 90%;
+    height: 60%;
     gap: 1.5rem;
   }
 
@@ -511,6 +512,10 @@
     top: 30%;
   }
 
+  .yr-left {
+    margin-left: 0;
+  }
+
   .project-text-box-right {
     width: 25rem;
     top: 35%;
@@ -550,4 +555,91 @@
 }
 
 @media (max-width: 34em) {
+  .top-title {
+    left: 1rem;
+    top: 3px;
+  }
+
+  .kgg-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-me {
+    font-size: 3.3rem;
+  }
+
+  .hero-txt {
+    font-size: 2.2rem;
+  }
+
+  .hero-bottom {
+    width: 40rem;
+  }
+
+  .hero-description {
+    font-size: 1.4rem;
+  }
+
+  .page-title {
+    top: 0;
+    font-size: 2.4rem;
+  }
+
+  .ab-content {
+    flex-direction: column-reverse;
+    width: 30rem;
+    height: 30%;
+    transition: all 0.3s;
+    margin-top: auto;
+    gap: 9px;
+  }
+
+  .about-me-left {
+    width: 90%;
+  }
+
+  .about-img {
+    width: 20rem;
+    height: auto;
+  }
+
+  .skill {
+    width: 9rem;
+    height: 11rem;
+  }
+
+  .skill::before {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .skill img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .skill p {
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .line {
+    opacity: 0;
+  }
+
+  .project-text-box-left {
+    width: 25rem;
+    height: 6rem;
+    left: 0;
+    top: -1rem;
+  }
+
+  .project-text-box-right {
+    height: 6rem;
+    top: -6rem;
+  }
 }
