@@ -44,6 +44,10 @@
 }
 
 @media (max-width: 84em) {
+  .scroll-trigger {
+    height: 230vh;
+  }
+
   .top-nav {
     right: 4rem;
     top: 1.2rem;
