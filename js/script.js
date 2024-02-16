@@ -17,6 +17,7 @@ const socialLogos = document.querySelectorAll('.socials-logo');
 const navLinksEl = document.querySelector('.top-nav-list');
 const navLinks = document.querySelectorAll('.top-nav-link');
 const abContent = document.querySelector('.ab-content');
+const abBtn = document.querySelector('.ab-work-together');
 const houseEl = document.getElementById('house');
 const aboutEl = document.getElementById('about');
 const skillsEl = document.getElementById('skills');
@@ -46,6 +47,17 @@ btnNav.addEventListener('click', function () {
 
   if (contactisActive)
     socialLogos.forEach((logo) => logo.classList.toggle('btn-color'));
+});
+
+abBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  const href = abBtn.getAttribute('href');
+  const element = document.querySelector(href);
+
+  element.scrollIntoView({
+    behavior: 'smooth',
+  });
 });
 
 window.addEventListener('scroll', scrollEvent);
