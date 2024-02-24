@@ -610,11 +610,14 @@
   border: 2px solid #e9af04;
   border-radius: 5px;
   background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn a:link,
-.btn a:active,
-.btn a:visited {
+.btn:link,
+.btn:active,
+.btn:visited {
   color: #e9af04;
   text-decoration: none;
 }
