@@ -406,6 +406,7 @@
 .skill p {
   font-size: 1.8rem;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 /* PROJECTS SECTION */
@@ -509,8 +510,13 @@
   transform: translateX(-50%);
 }
 
+.zero {
+  height: 12rem;
+}
+
 .one {
-  height: 22rem;
+  top: -22%;
+  height: 32rem;
 }
 
 .two {
