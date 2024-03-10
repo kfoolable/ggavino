@@ -49,6 +49,19 @@ btnNav.addEventListener('click', function () {
     socialLogos.forEach((logo) => logo.classList.toggle('btn-color'));
 });
 
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    topNav.classList.remove('nav-open');
+
+    e.preventDefault();
+    const href = link.getAttribute('href');
+    const element = document.querySelector(href);
+    element.scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
+
 abBtn.addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -84,6 +97,8 @@ homeClick.forEach((els) => {
     });
   });
 });
+
+window.addEventListener('resize', applyStylesOnResize);
 
 const observer = new IntersectionObserver(isActive, {
   root: null,
@@ -124,9 +139,11 @@ function isActive(entries) {
 
       if (isContactIntersecting) {
         iconNav.classList.add('btn-color');
+        contactEl.classList.add('is-active');
         applyStylesOnResize();
       } else {
         iconNav.classList.remove('btn-color');
+        contactEl.classList.remove('is-active');
         socialLogos.forEach((logo) => logo.classList.remove('btn-color'));
       }
     }
@@ -173,5 +190,3 @@ function applyStylesOnResize() {
     }
   }
 }
-
-window.addEventListener('resize', applyStylesOnResize);
