@@ -115,8 +115,22 @@ function scrollEvent() {
   }
 }
 
+let isContactIntersecting = false;
+
 function isActive(entries) {
   entries.forEach((entry) => {
+    if (entry.target === contactSection) {
+      isContactIntersecting = entry.isIntersecting;
+
+      if (isContactIntersecting) {
+        iconNav.classList.add('btn-color');
+        applyStylesOnResize();
+      } else {
+        iconNav.classList.remove('btn-color');
+        socialLogos.forEach((logo) => logo.classList.remove('btn-color'));
+      }
+    }
+
     if (entry.target === abContent) {
       if (entry.isIntersecting) houseEl.classList.add('is-active');
       else houseEl.classList.remove('is-active');
@@ -146,17 +160,18 @@ function isActive(entries) {
         projectsEl.classList.remove('is-active');
       }
     }
-
-    if (entry.target === contactSection) {
-      if (entry.isIntersecting) {
-        contactEl.classList.add('is-active');
-        iconNav.classList.add('btn-color');
-        socialLogos.forEach((logo) => logo.classList.add('btn-color'));
-      } else {
-        contactEl.classList.remove('is-active');
-        iconNav.classList.remove('btn-color');
-        socialLogos.forEach((logo) => logo.classList.remove('btn-color'));
-      }
-    }
   });
 }
+
+function applyStylesOnResize() {
+  if (isContactIntersecting) {
+    if (window.innerWidth < 700) {
+      iconNav.classList.add('btn-color');
+      socialLogos.forEach((logo) => logo.classList.add('btn-color'));
+    } else {
+      socialLogos.forEach((logo) => logo.classList.remove('btn-color'));
+    }
+  }
+}
+
+window.addEventListener('resize', applyStylesOnResize);
